@@ -24,5 +24,7 @@
 # Ignore .env files as they are personal
 #/.env
 
+/mariadb
+
 /*.sql
 /*.tar.gz
