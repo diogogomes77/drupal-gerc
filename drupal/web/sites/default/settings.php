@@ -282,7 +282,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'qE0HVDZbU-yhZXNq2Bke5sSGblBDVXlhPEuwiJJlT44rizrEpqmkOcUsXIqb3jia_1QIPR1mqA';
+$settings['hash_salt'] = 'fHOf9wFTe9y6ho-ycbd12oCgnmVme2K-q0us1Qbyj3SEr-nmAizfVH6sdSLU2e8uf82ts7DHfQ';
 
 /**
  * Deployment identifier.
@@ -779,7 +779,6 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$settings['config_sync_directory'] = '../config/sync';
 $databases['default']['default'] = array (
   'database' => 'drupal_db',
   'username' => 'drupal_db_user',
@@ -790,3 +789,4 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+$settings['config_sync_directory'] = 'sites/default/files/config_18fAa09FqOk7qwHLEaKXoL91vWZLL3NqHo2U-qFyDa-9UOOOtGEm41Y2Zi9-yRrcSYxM6jyV2g/sync';
