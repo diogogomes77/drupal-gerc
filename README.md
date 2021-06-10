@@ -9,6 +9,8 @@ dependencies with [Composer](https://getcomposer.org/).
 
 docker-compose exec php drush sql:create --db-su=root --db-su-pw=password --db-url="mysql://drupal_db_user:drupal_db_password@mariadb/drupal_db" -y
 
+sudo chmod 777 drupal -R
+docker-compose exec php composer install
 cat backup1.sql | docker-compose exec -T php drush sql-cli
 
 First you need to [install Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
